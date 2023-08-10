@@ -1,0 +1,118 @@
+.about-us {
+    margin-top: 80px !important;
+    &__text{
+        padding: 0px 120px !important;
+        &__subtitle {
+            opacity: 0.8;
+            color: $main-black-color;
+            // font-family: Lexend;
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: 0.91px;
+            line-height: 26px;
+            margin-bottom: 38px;
+        }
+        &__title {
+            opacity: 0.8;
+            color: $main-black-color;
+            // font-family: Lexend;
+            font-size: 40px;
+            letter-spacing: 0;
+            line-height: 60px;
+            margin-bottom: 62px;
+        }
+        &__description {
+            opacity: 0.8;
+            color: $grey-color;
+            // font-family: Lexend;
+            font-size: 24px;
+            font-weight: 300;
+            letter-spacing: 0;
+            line-height: 30px;
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0px;
+                bottom: -42px;
+                border: 2px solid var(--main-bg-green-color);
+                background-color: var(--main-bg-green-color);
+                width: 135%;
+                z-index: 2;
+            }
+        }
+    }
+    &__image {
+        height: 480px;
+        background-color: $main-bg-green-color;
+        background-image: url(../assets/img_nosotros.png);
+    }
+}
+
+.about-ricardo {
+    margin-top: 100px !important;
+    margin-bottom: 92px;
+    padding: 0px 120px !important;
+    &__title {
+        &__name {
+            opacity: 0.8;
+            color: $main-black-color;
+            // font-family: Lexend;
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 0.8px;
+            line-height: 25px;
+        }
+        &__position {
+            opacity: 0.8;
+            color: $main-black-color;
+            // font-family: Lexend;
+            font-size: 16px;
+            font-weight: 300;
+            letter-spacing: 3px;
+            line-height: 20px;
+            text-transform: uppercase;
+        }
+    }
+    &__text {
+        &__info {
+            opacity: 0.8;
+            color: $main-black-color;
+            // font-family: Lexend;
+            font-size: 18px;
+            font-weight: 300;
+            letter-spacing: 0;
+            line-height: 26px;
+            &--bold {
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .about-us {
+        margin-top: 80px !important;
+        &__text{
+            padding: 0px 20px !important;
+            &__description {
+                &::after {
+                    width: 100%;
+                }
+            }
+        }
+        &__image {
+            background-position-y: 190px;
+            background-repeat: no-repeat;
+            background-color: $main-white;
+        }
+    }
+
+    .about-ricardo {
+        padding: 0px 20px !important;
+        &__title {
+            margin-bottom: 16px;
+        }
+    }
+}

@@ -2,10 +2,14 @@
 <script>
     $(document).ready(function(){
         const pathname = window.location.pathname;
-        if (pathname.includes('index.html')) {
-            $('#index-link').addClass('active');
-        } else if (pathname.includes('services.html')) {
+        if (pathname.includes('services.html')) {
             $('#services-link').addClass('active');
+        } else if (pathname.includes('about-us.html')) {
+            $('#about-us-link').addClass('active');
+        } else if (pathname.includes('contact.html')) {
+            $('#contact-link').addClass('active');
+        } else {
+            $('#index-link').addClass('active');
         }
     });
 </script>
@@ -29,10 +33,10 @@
                     <li id="services-link" class="nav-item">
                         <a class="nav-link" href="services.html">Servicios</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Nosotros</a>
+                    <li id="about-us-link" class="nav-item">
+                        <a class="nav-link" href="about-us.html">Nosotros</a>
                     </li>
-                    <li class="nav-item">
+                    <li id="contact-link" class="nav-item">
                         <a class="nav-link" href="#">Contacto</a>
                     </li>
                 </ul>
