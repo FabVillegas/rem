@@ -10,7 +10,7 @@
   flex-direction: column;
   overflow: hidden;
   background-color: var(--main-black-color);
-  background-image: url(./../../assets/Img_home1.png);
+  background-image: url(../../assets/img_home1.png);
   padding: 16px 0 0 0 !important;
 }
 .slogan__green-square__line {
