@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./stylesheets/services.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <script src="https://releases.jquery.com/git/jquery-git.js"></script>
+        <script>
+            $(function() {
+                $('#navbar').load('./pages/navbar/navbar.html');
+            });
+            $(function() {
+                $('#footer').load('./pages/footer/footer.html');
+            });
+        </script>
+    </head>
+    <body>
+        <div class="container-fluid p-0">
+            <!-- menu -->
+            <div id="navbar"></div>
+            <!-- article -->
+            <div class="row g-0 practices-areas">
+                <div class="col-3 practices-areas__image-container"></div>
+                <div class="col-9 practices-areas__content-container">
+                    <div class="practices-areas__content-container__content">
+                        <h2 class="practices-areas__content-container__content__subtitle">Nuestros Servicios</h2>
+                        <h1 class="practices-areas__content-container__content__title">Áreas de Práctica</h1>
+                        <div class="practices-areas__content-container__content__practice-area">
+                            <h3 class="practices-areas__content-container__content__practice-area__name">
+                                Transaccional
+                            </h3>
+                            <p class="practices-areas__content-container__content__practice-area__definition">
+                                Operaciones de compraventa, suministro, arrendamiento, comodato, prestación de servicios, contratos de obra, comisión mercantil, reconocimiento de adeudo y forma de pago, acuerdos de confidencialidad, entre otros.
+                            </p>
+                        </div>
+                        <div class="practices-areas__content-container__content__practice-area">
+                            <h3 class="practices-areas__content-container__content__practice-area__name">
+                                Bancario y Financiero
+                            </h3>
+                            <p class="practices-areas__content-container__content__practice-area__definition">
+                                Estructuras de financiamiento, créditos y reestructuraciones. Entre las operaciones en las que hemos participado se encuentran créditos garantizados y quirografarios, financiamiento para adquisiciones, créditos sindicados, créditos puente y emisión de instrumentos públicos de deuda.
+                            </p>
+                        </div>
+                        <div class="practices-areas__content-container__content__practice-area">
+                            <h3 class="practices-areas__content-container__content__practice-area__name">
+                                Inmobiliario
+                            </h3>
+                            <p class="practices-areas__content-container__content__practice-area__definition">
+                                Auditoría legal, proyectos de adquisición, arrendamiento, fideicomisos de desarrollo e inversión, y contratos de administración de inmuebles.
+                            </p>
+                        </div>
+                        <div class="practices-areas__content-container__content__practice-area">
+                            <h3 class="practices-areas__content-container__content__practice-area__name">
+                                Fusiones y adquisiciones
+                            </h3>
+                            <p class="practices-areas__content-container__content__practice-area__definition">
+                                Procesos de due diligence, cartas de intención y acuerdos preparatorios, compraventa de activos o acciones, convenios de no competencia y documentación relacionada con las transacciones.
+                            </p>
+                        </div>
+                        <div class="practices-areas__content-container__content__practice-area">
+                            <h3 class="practices-areas__content-container__content__practice-area__name">
+                                Societario y gobierno corporativo
+                            </h3>
+                            <p class="practices-areas__content-container__content__practice-area__definition">
+                                Constitución de nuevas entidades, libros corporativos, títulos de acciones, otorgamiento y revocación de poderes, joint ventures, acuerdos de accionistas, reestructuras de participación accionaria y protocolos familiares. Formación y formalización de gobierno corporativo alineado con los intereses del negocio.
+                            </p>
+                        </div>
+                        <div class="practices-areas__content-container__content__practice-area">
+                            <h3 class="practices-areas__content-container__content__practice-area__name">
+                                Propiedad intelectual
+                            </h3>
+                            <p class="practices-areas__content-container__content__practice-area__definition">
+                                Protección de activos intangibles, registro de signos distintivos, como marcas y avisos comerciales, contratos de licencia y transmisión de tecnología, franquicias.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer -->
+            <div id="footer"></div>
+        </div>
+    </body>
+</html>

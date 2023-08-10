@@ -1,0 +1,18 @@
+{
+  "name": "remasesores",
+  "version": "1.0.0",
+  "description": "TESTING",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-sass": "sass pages:stylesheets",
+    "watch-sass": "sass --watch pages:stylesheets"
+  },
+  "author": "Fabritzio Villegas",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "jquery": "^3.6.3",
+    "sass": "^1.57.1"
+  }
+}
