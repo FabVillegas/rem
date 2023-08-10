@@ -1,0 +1,254 @@
+.contact {
+    margin-top: 80px !important;
+    margin-bottom: 80px !important;
+    padding-bottom: 80px !important;
+    overflow: hidden;
+    &__description {
+        padding: 0 120px !important;
+        &__text {
+            opacity: 0.8;
+            color: $grey-color;
+            // font-family: Lexend;
+            font-size: 20px;
+            font-weight: 300;
+            letter-spacing: 0;
+            line-height: 28px;
+            position: relative;
+            &--bold {
+                font-weight: 500;
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                right: 10%;
+                bottom: -16px;
+                border: 2px solid var(--main-bg-green-color);
+                background-color: var(--main-bg-green-color);
+                width: 135%;
+                z-index: 2;
+            }
+        }
+        &__info {
+            margin-top: 64px;
+            &__title {
+                opacity: 0.8;
+                color: $main-black-color;
+                // font-family: Lexend;
+                font-size: 16px;
+                font-weight: 500;
+                letter-spacing: 0.91px;
+                line-height: 26px;
+                text-transform: uppercase;
+            }
+            &__address {
+                opacity: 0.8;
+                color: $grey-color;
+                // font-family: Lexend;
+                font-size: 20px;
+                font-weight: 300;
+                letter-spacing: 0;
+                line-height: 25px;
+            }
+            &__notice {
+                opacity: 0.8;
+                color: $grey-color;
+                // font-family: Lexend;
+                font-size: 20px;
+                font-weight: 300;
+                letter-spacing: 0;
+                line-height: 28px;
+            }
+            &__hyperlink {
+                color: var(--main-text-green-color);
+                /* font-family: Lexend; */
+                font-size: 20px;
+                font-weight: 500;
+                letter-spacing: 1.14px;
+                line-height: 26px;
+                margin-top: 24px;
+                display: inline-block;
+                text-decoration: none;
+            }
+            &__telephone {
+                margin-top: 54px;
+                opacity: 0.8;
+                color: $grey-color;
+                // font-family: Lexend;
+                font-size: 20px;
+                font-weight: 300;
+                letter-spacing: 0;
+                line-height: 25px;
+            }
+        }
+    }
+    &__map {
+        position: relative;
+        &__google-map-container {
+            background-color: var(--main-bg-green-color);
+            margin-right: 40px;
+            margin-left: auto;
+            height: 572px;
+            width: 566.73px;
+        }
+        &::after {
+            content: "";
+            background-color: var(--main-black-color);
+            background-image: url(../assets/img_contacto.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 560px;
+            width: 560px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: -2;
+        }
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .contact {
+        &__map {
+            &::after {
+                bottom: -32px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .contact {
+        &__map {
+            margin-top: 56px !important;
+            &__google-map-container {
+                height: 532px;
+                width: 480px;
+            }
+            &::after {
+                height: 532px;
+                width: 480px;
+                right: 0;
+                top: 32px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .contact {
+        &__map {
+            margin-top: 56px !important;
+            &__google-map-container {
+                height: 532px;
+                width: 728px;
+            }
+            &::after {
+                height: 532px;
+                width: 562px;
+                right: 0;
+                top: 32px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .contact {
+        margin-top: 40px !important;
+        &__description {
+            padding: 0 20px !important;
+            &__text {
+                opacity: 0.8;
+                color: $grey-color;
+                // font-family: Lexend;
+                font-size: 20px;
+                font-weight: 300;
+                letter-spacing: 0;
+                line-height: 28px;
+                position: relative;
+                &--bold {
+                    font-weight: 500;
+                }
+                &::after {
+                    right: 25%;
+                }
+            }
+            &__info {
+                margin-top: 64px;
+                &__title {
+                    opacity: 0.8;
+                    color: $main-black-color;
+                    // font-family: Lexend;
+                    font-size: 16px;
+                    font-weight: 500;
+                    letter-spacing: 0.91px;
+                    line-height: 26px;
+                    text-transform: uppercase;
+                }
+                &__address {
+                    opacity: 0.8;
+                    color: $grey-color;
+                    // font-family: Lexend;
+                    font-size: 20px;
+                    font-weight: 300;
+                    letter-spacing: 0;
+                    line-height: 25px;
+                }
+                &__notice {
+                    opacity: 0.8;
+                    color: $grey-color;
+                    // font-family: Lexend;
+                    font-size: 20px;
+                    font-weight: 300;
+                    letter-spacing: 0;
+                    line-height: 28px;
+                }
+                &__hyperlink {
+                    color: var(--main-text-green-color);
+                    /* font-family: Lexend; */
+                    font-size: 20px;
+                    font-weight: 500;
+                    letter-spacing: 1.14px;
+                    line-height: 26px;
+                    margin-top: 24px;
+                    display: inline-block;
+                    text-decoration: none;
+                }
+                &__telephone {
+                    margin-top: 54px;
+                    opacity: 0.8;
+                    color: $grey-color;
+                    // font-family: Lexend;
+                    font-size: 20px;
+                    font-weight: 300;
+                    letter-spacing: 0;
+                    line-height: 25px;
+                }
+            }
+        }
+        &__map {
+            margin-top: 56px !important;
+            position: relative;
+            &__google-map-container {
+                background-color: var(--main-bg-green-color);
+                margin-right: 40px;
+                margin-left: auto;
+                height: 240px;
+                width: 340px;
+            }
+            &::after {
+                content: "";
+                background-color: var(--main-black-color);
+                background-image: url(../assets/img_contacto.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                height: 240px;
+                width: 340px;
+                position: absolute;
+                right: 0;
+                top: 32px;
+                z-index: -2;
+            }
+        }
+    }
+}
