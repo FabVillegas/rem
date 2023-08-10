@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="79.1959595px" height="79.1959595px" viewBox="0 0 79.1959595 79.1959595" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>map_pin</title>
+    <g id="Site" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="map_pin">
+            <rect id="Rectangle" fill="#2A7A40" transform="translate(39.597980, 39.597980) rotate(-315.000000) translate(-39.597980, -39.597980) " x="11.5979797" y="11.5979797" width="56" height="56"></rect>
+            <path d="M28.5979797,23.5979797 L50.8674374,23.5979797 L50.8674374,29.6895466 L28.5979797,29.6895466 Z M28.5979797,35.7811134 L45.806197,35.7811134 L45.806197,41.8726803 L28.5979797,41.8726803 Z M28.5979797,48.9795082 L50.8674374,48.9795082 L50.8674374,55.0710751 L28.5979797,55.0710751 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>

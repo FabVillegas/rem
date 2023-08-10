@@ -10,6 +10,7 @@
   flex-direction: column;
   overflow: hidden;
   background-color: var(--main-black-color);
+  background-image: url(./../../assets/Img_home1.png);
   padding: 16px 0 0 0 !important;
 }
 .slogan__green-square__line {
@@ -191,6 +192,7 @@
 .practice-areas__content::before {
   content: "";
   background-color: var(--main-black-color);
+  background-image: url(./../../assets/Img_home2.png);
   width: 520px;
   height: 480px;
   position: absolute;
@@ -275,6 +277,7 @@
 
 .more-information__image {
   background-color: var(--main-black-color);
+  background-image: url(./../../assets/Img_home3.png);
   height: 240px;
 }
 
@@ -421,7 +424,7 @@
     padding-bottom: 18px !important;
   }
   .navbar .navbar-nav.hyperlinks {
-    margin-bottom: 180px;
+    margin-bottom: 140px;
   }
   .navbar .navbar-nav .nav-item {
     opacity: 0.5;
@@ -457,12 +460,17 @@
   .offcanvas-body .offcanvas-footer {
     display: flex;
     flex-grow: 1;
-    align-items: end;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
     padding-left: 8px;
     color: #909DAA;
     font-size: 12px;
     letter-spacing: 0;
     line-height: 15px;
+  }
+  .offcanvas-body .offcanvas-footer__image {
+    margin-bottom: 16px;
   }
 }
 footer {
@@ -472,14 +480,23 @@ footer {
   padding-left: 120px;
   padding-right: 120px;
 }
+footer .logo-isotype-container {
+  display: none;
+}
+footer .socials-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+footer .socials-container__instruction {
+  padding: 18px 0;
+  margin: 0 40px 0 0;
+  text-align: right;
+}
 
 .footer__info {
   padding: 18px 0;
   margin: 0;
-}
-
-.footer__info--socials {
-  text-align: right;
 }
 
 @media only screen and (max-width: 992px) {
@@ -490,6 +507,25 @@ footer {
     font-size: 12px;
     letter-spacing: 0;
     line-height: 16px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  footer {
+    color: #484848;
+    background-color: #FFFFFF;
+  }
+  footer .footer__info {
+    opacity: 0.6;
+  }
+  footer .logo-isotype-container {
+    display: block;
+  }
+  footer .logo-isotype-container__image {
+    height: 24px;
+    width: auto;
+  }
+  footer .socials-container {
+    display: none;
   }
 }
 
