@@ -6,6 +6,7 @@
     margin-bottom: 80px;
     &__image-container {
         background-color: $main-bg-green-color;
+        background-image: url(../assets/img_servicios.png);
     }
     &__content-container {
         &__content {
@@ -50,6 +51,27 @@
                     font-weight: 300;
                     letter-spacing: 0;
                     line-height: 25px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .practices-areas {
+        margin-top: 32px !important;
+        &__content-container {
+            &__content {
+                padding: 0 20px;
+                &__title {
+                    font-size: 32px;
+                    letter-spacing: 0;
+                    line-height: 40px;
+                }
+                &__definition {
+                    font-size: 16px;
+                    line-height: 20px;
                 }
             }
         }
