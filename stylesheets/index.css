@@ -421,6 +421,7 @@
 }
 @media only screen and (max-width: 768px) {
   .navbar {
+    border-bottom: #2A7A40 solid 2px;
     padding-bottom: 18px !important;
   }
   .navbar .navbar-nav.hyperlinks {

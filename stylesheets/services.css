@@ -3,6 +3,7 @@
 }
 .practices-areas__image-container {
   background-color: #2A7A40;
+  background-image: url(../assets/img_servicios.png);
 }
 .practices-areas__content-container__content {
   box-sizing: border-box;
@@ -46,6 +47,23 @@
   line-height: 25px;
 }
 
+@media only screen and (max-width: 768px) {
+  .practices-areas {
+    margin-top: 32px !important;
+  }
+  .practices-areas__content-container__content {
+    padding: 0 20px;
+  }
+  .practices-areas__content-container__content__title {
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: 40px;
+  }
+  .practices-areas__content-container__content__definition {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
 :root {
   --main-white: #FFFFFF;
   --main-black-color: #000000;
@@ -122,6 +140,7 @@
 }
 @media only screen and (max-width: 768px) {
   .navbar {
+    border-bottom: #2A7A40 solid 2px;
     padding-bottom: 18px !important;
   }
   .navbar .navbar-nav.hyperlinks {
