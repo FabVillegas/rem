@@ -2,13 +2,10 @@
 <script>
     $(document).ready(function(){
         const pathname = window.location.pathname;
-        switch (pathname) {
-            case '/index.html':
-                $('#index-link').addClass('active');
-                break;
-            case '/services.html':
-                $('#services-link').addClass('active');
-                break;
+        if (pathname.includes('index.html')) {
+            $('#index-link').addClass('active');
+        } else if (pathname.includes('services.html')) {
+            $('#services-link').addClass('active');
         }
     });
 </script>
